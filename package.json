@@ -1,0 +1,15 @@
+{
+  "name": "catchup",
+  "private": true,
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": ">=26 <27",
+    "pnpm": ">=8"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter @catchup/api --filter @catchup/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "seed:dev": "pnpm --filter @catchup/api seed:dev"
+  }
+}
